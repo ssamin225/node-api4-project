@@ -16,7 +16,7 @@ server.get('/api/users', (req, res) => {
 })
 
 server.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/name', 'index.html'))
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
 
 server.post('/api/register', (req, res) => {
